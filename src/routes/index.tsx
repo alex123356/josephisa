@@ -1,29 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Landing } from "@/components/landing/Landing";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Joseph Isa — Venture Past Our Sky" },
+      { name: "description", content: "Cinematic space-travel voyages by Joseph Isa. Deep-space exploration within reach—secure and extraordinary." },
+      { property: "og:title", content: "Joseph Isa — Venture Past Our Sky" },
+      { property: "og:description", content: "Cinematic space-travel voyages by Joseph Isa." },
     ],
   }),
-  component: Index,
+  component: Landing,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
