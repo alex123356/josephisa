@@ -4,10 +4,10 @@ import { Landing } from "@/components/landing/Landing";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Joseph Isa — Venture Past Our Sky" },
-      { name: "description", content: "Cinematic space-travel voyages by Joseph Isa. Deep-space exploration within reach—secure and extraordinary." },
-      { property: "og:title", content: "Joseph Isa — Venture Past Our Sky" },
-      { property: "og:description", content: "Cinematic space-travel voyages by Joseph Isa." },
+      { title: "Joseph Isa — Independent Web Designer" },
+      { name: "description", content: "Joseph Isa — independent web designer crafting distinctive, high-performance websites. Get in touch: Isajoseph.cw@gmail.com" },
+      { property: "og:title", content: "Joseph Isa — Independent Web Designer" },
+      { property: "og:description", content: "Distinctive, high-performance websites designed and built by Joseph Isa." },
     ],
   }),
   component: Landing,

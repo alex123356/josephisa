@@ -18,26 +18,29 @@ const fadeUp = (delay: number) => ({
   transition: { duration: 0.8, ease, delay },
 });
 
-const navLinks = ["Home", "Voyages", "Worlds", "Innovation", "Plan Launch"];
+const EMAIL = "Isajoseph.cw@gmail.com";
+const MAILTO = `mailto:${EMAIL}`;
+
+const navLinks = ["Work", "Services", "Process", "About"];
 
 const capabilities = [
   {
     icon: ImageIcon,
-    tags: ["Natural Context", "Photo Realism", "Infinite Settings", "Eco-Vibe"],
-    title: "AI Scenery",
-    body: "AI analyzes your product to create indistinguishable natural environments — from Icelandic cliffs to misty forests.",
+    tags: ["Brand Identity", "Visual System", "Custom UI", "Pixel Precision"],
+    title: "Website Design",
+    body: "Bespoke websites built around your brand — distinct layouts, refined typography, and details that make your business feel premium.",
   },
   {
     icon: MovieIcon,
-    tags: ["Scale Fast", "Visual Consistency", "Time Saver", "Ready to Post"],
-    title: "Batch Production",
-    body: "Style your entire product line in minutes. Create a unified visual identity for catalogues and social media without weeks of retouching.",
+    tags: ["Responsive", "Fast Loading", "SEO Ready", "Built to Scale"],
+    title: "Development",
+    body: "Hand-crafted, modern code. Lightning-fast pages that work flawlessly on every device and rank well on search.",
   },
   {
     icon: LightbulbIcon,
-    tags: ["Ray Tracing", "Physical Shadows", "Studio Quality", "Sunlight Sync"],
-    title: "Smart Lighting",
-    body: "Automatic lighting and material adjustment. Achieve flawless integration with realistic shadows and sunlight.",
+    tags: ["Strategy", "Wireframes", "Iteration", "Launch Support"],
+    title: "Creative Direction",
+    body: "From first concept to launch — strategy, structure, and design decisions that turn ideas into a product people remember.",
   },
 ];
 
@@ -59,7 +62,7 @@ export function Landing() {
             className="fixed top-4 left-0 right-0 z-50 flex items-center justify-between px-8 lg:px-16"
           >
             <div className="liquid-glass h-12 w-12 rounded-full flex items-center justify-center">
-              <span className="font-heading italic text-white text-2xl leading-none -mt-1">a</span>
+              <span className="font-heading italic text-white text-2xl leading-none -mt-1">J</span>
             </div>
 
             <div className="hidden md:flex liquid-glass rounded-full px-1.5 py-1.5 items-center gap-1">
@@ -73,10 +76,10 @@ export function Landing() {
                 </a>
               ))}
               <a
-                href="#"
+                href={MAILTO}
                 className="ml-1 inline-flex items-center gap-1 bg-white text-black rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap"
               >
-                Claim a Spot
+                Get in Touch
                 <ArrowUpRight className="h-4 w-4" />
               </a>
             </div>
@@ -90,13 +93,13 @@ export function Landing() {
               {...fadeUp(0.4)}
               className="liquid-glass rounded-full inline-flex items-center gap-2 pl-1 pr-3 py-1"
             >
-              <span className="bg-white text-black rounded-full px-3 py-1 text-xs font-semibold">New</span>
-              <span className="text-sm text-white/90">Maiden Crewed Voyage to Mars Arrives 2026</span>
+              <span className="bg-white text-black rounded-full px-3 py-1 text-xs font-semibold">Open</span>
+              <span className="text-sm text-white/90">Accepting new projects for 2026</span>
             </motion.div>
 
-            <div className="mt-6 max-w-2xl">
+            <div className="mt-6 max-w-3xl">
               <BlurText
-                text="Venture Past Our Sky Across the Universe"
+                text="Websites Designed Beyond the Ordinary"
                 className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8]"
               />
             </div>
@@ -105,28 +108,28 @@ export function Landing() {
               {...fadeUp(0.8)}
               className="mt-4 text-sm md:text-base text-white max-w-2xl font-body font-light leading-tight"
             >
-              Discover the universe in ways once unimaginable. Our pioneering vessels and breakthrough
-              engineering bring deep-space exploration within reach—secure and extraordinary.
+              I'm Joseph Isa — an independent web designer crafting distinctive, high-performance
+              websites for brands that want to stand apart. Strategy, design, and code, end to end.
             </motion.p>
 
             <motion.div {...fadeUp(1.1)} className="flex items-center gap-6 mt-6">
               <a
-                href="#"
+                href={MAILTO}
                 className="liquid-glass-strong rounded-full px-5 py-2.5 text-sm font-medium text-white inline-flex items-center gap-2"
               >
-                Start Your Voyage
+                Start a Project
                 <ArrowUpRight className="h-5 w-5" />
               </a>
-              <a href="#" className="text-sm text-white inline-flex items-center gap-2">
-                View Liftoff
+              <a href="#work" className="text-sm text-white inline-flex items-center gap-2">
+                See Recent Work
                 <Play className="h-4 w-4" />
               </a>
             </motion.div>
 
             <motion.div {...fadeUp(1.3)} className="flex items-stretch gap-4 mt-8">
               {[
-                { Icon: ClockIcon, num: "34.5 Min", label: "Average Videos Watch Time" },
-                { Icon: GlobeIcon, num: "2.8B+", label: "Users Across the Globe" },
+                { Icon: ClockIcon, num: "5+ Yrs", label: "Designing for the web" },
+                { Icon: GlobeIcon, num: "40+", label: "Sites shipped worldwide" },
               ].map(({ Icon, num, label }) => (
                 <div key={label} className="liquid-glass p-5 w-[220px] rounded-[1.25rem] text-left">
                   <Icon className="h-7 w-7 text-white" />
@@ -139,19 +142,20 @@ export function Landing() {
             </motion.div>
           </div>
 
-          {/* Partners */}
+          {/* Footer chip */}
           <motion.div
             {...fadeUp(1.4)}
             className="flex flex-col items-center gap-4 pb-8 px-4"
           >
             <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white">
-              Collaborating with top aerospace pioneers globally
+              Trusted by founders, studios, and creators
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 font-heading italic text-white text-2xl md:text-3xl tracking-tight">
-              {["Aeon", "Vela", "Apex", "Orbit", "Zeno"].map((n) => (
-                <span key={n}>{n}</span>
-              ))}
-            </div>
+            <a
+              href={MAILTO}
+              className="font-heading italic text-white text-2xl md:text-3xl tracking-tight hover:opacity-80"
+            >
+              {EMAIL}
+            </a>
           </motion.div>
         </div>
       </section>
@@ -165,11 +169,11 @@ export function Landing() {
 
         <div className="relative z-10 px-8 md:px-16 lg:px-20 pt-24 pb-10 flex flex-col min-h-screen">
           <div className="mb-auto">
-            <div className="text-sm font-body text-white/80 mb-6">// Capabilities</div>
+            <div className="text-sm font-body text-white/80 mb-6">// What I Do</div>
             <h2 className="font-heading italic text-white text-6xl md:text-7xl lg:text-[6rem] leading-[0.9] tracking-[-3px]">
-              Production
+              Design that
               <br />
-              evolved
+              moves people
             </h2>
           </div>
 
@@ -205,6 +209,20 @@ export function Landing() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Contact CTA */}
+          <div className="mt-16 flex flex-col items-center text-center gap-4">
+            <h3 className="font-heading italic text-white text-4xl md:text-5xl tracking-[-1px]">
+              Have a project in mind?
+            </h3>
+            <a
+              href={MAILTO}
+              className="liquid-glass-strong rounded-full px-6 py-3 text-sm font-medium text-white inline-flex items-center gap-2"
+            >
+              {EMAIL}
+              <ArrowUpRight className="h-5 w-5" />
+            </a>
           </div>
         </div>
       </section>
