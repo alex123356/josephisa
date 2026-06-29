@@ -86,8 +86,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Joseph Isa — Independent Web Designer" },
       { name: "twitter:description", content: "Joseph Isa, I am independent web designer crafting distinctive, high-performance websites for brands that want to stand apart." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/72eddf85-6755-44ec-9134-87b5252363a5/id-preview-0ba1e649--43c47fa5-f478-460f-9ddb-e308ebae85e8.lovable.app-1782762853514.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/72eddf85-6755-44ec-9134-87b5252363a5/id-preview-0ba1e649--43c47fa5-f478-460f-9ddb-e308ebae85e8.lovable.app-1782762853514.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0f382a71-8bd2-48d5-9c4b-b8a6e67c733f/id-preview-f3a1b951--43c47fa5-f478-460f-9ddb-e308ebae85e8.lovable.app-1782765785667.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0f382a71-8bd2-48d5-9c4b-b8a6e67c733f/id-preview-f3a1b951--43c47fa5-f478-460f-9ddb-e308ebae85e8.lovable.app-1782765785667.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
